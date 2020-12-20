@@ -1,0 +1,134 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+body {
+  background: #e3edf7;
+}
+
+.container {
+  text-align: center;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.container span {
+  text-transform: capitalize;
+  display: block;
+}
+
+.text1 {
+  color: black;
+  font-size: 90px;
+  font-weight: 700;
+  letter-spacing: 8px;
+  margin-bottom: 20px;
+  background: #e3edf7;
+  position: relative;
+  animation: text 3s 1;
+}
+
+.text2 {
+  font-size: 40px;
+  color: #6ab04c;
+  animation: text2 3s 1;
+}
+
+@keyframes text {
+  0% {
+    background: #e3edf7;
+    margin-bottom: -40px;
+  }
+
+  30% {
+    letter-spacing: 25px;
+    margin-bottom: -40px;
+  }
+
+  85% {
+    letter-spacing: 8px;
+    margin-bottom: -40px;
+  }
+}
+
+@keyframes text2 {
+  30% {
+    letter-spacing: 25px;
+    margin-bottom: -40px;
+  }
+
+  85% {
+    letter-spacing: 8px;
+    margin-bottom: -40px;
+  }
+}
+
+h1 {
+  font-family: sans-serif;
+  font-weight: normal;
+  font-size: 25px;
+  letter-spacing: 4px;
+  padding: 300px 0 100px;
+  color: #555;
+  text-align: center;
+}
+.social-media {
+  display: flex;
+  justify-content: center;
+}
+a {
+  display: flex;
+  background: #e3edf9;
+  height: 75px;
+  width: 75px;
+  margin: 0 15px;
+  border-radius: 8px;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+    -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+  border: 1.5px solid rgba(0, 0, 0, 0);
+  transition: transform 0.5s;
+}
+
+a i {
+  font-size: 35px;
+  color: #777;
+  transition: transform 0.5s;
+}
+
+a:hover {
+  box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+    inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+    -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+    0.5px 0.5px 0px rgba(0, 0, 0, 0.15), 0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+  border: 1.5px solid rgba(0, 0, 0, 0.01);
+  transform: translateY(2px);
+}
+a:hover i {
+  transform: scale(1.6);
+}
+
+a:hover .fa-github {
+  color: #3b5998;
+}
+
+a:hover .fa-linkedin {
+  color: #00acee;
+}
+
+.social {
+  animation: floating 2s infinite ease-in-out;
+}
+
+@keyframes floating {
+  50% {
+    transform: translateY(-30px);
+  }
+}
